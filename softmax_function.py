@@ -41,6 +41,12 @@ def softmax(x):
     pass  # TODO: Compute and return softmax(x)
 
 
+## or
+
+def softmax(x):
+    return np.exp(x) / np.sum(np.exp(x), axis = 0)
+
+
 print(softmax(scores))
 
 # Plot softmax curves
